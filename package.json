@@ -1,12 +1,22 @@
 {
-  "name": "@aaa/aggregator-routerai",
+  "name": "@ai-agg-agg/aggregator-routerai",
   "version": "1.0.0",
   "description": "routerai.ru aggregator plugin for aaa",
   "type": "module",
   "main": "./dist/routerai.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ai-agg-agg/aaa-aggregator-routerai.git"
+  },
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "oclif": {
     "hooks": {
-      "init": ["./dist/hooks/init"]
+      "init": [
+        "./dist/hooks/init"
+      ]
     }
   },
   "peerDependencies": {
@@ -15,9 +25,10 @@
   },
   "devDependencies": {
     "@types/bun": "latest",
-    "aaa": "file:.."
+    "aaa": "github:ai-agg-agg/aaa"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepare": "tsc"
   }
 }
