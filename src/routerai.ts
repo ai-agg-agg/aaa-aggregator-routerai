@@ -1,5 +1,5 @@
-import type { Aggregator, Model, AgentType } from 'aaa'
-import { httpGet, cacheSet, cacheGet, cacheStaleGet, isCacheFresh, resolveAuth } from 'aaa'
+import type { Aggregator, Model, AgentType } from '@ai-agg-agg/aaa-sdk'
+import { httpGet, cacheSet, cacheGet, cacheStaleGet, isCacheFresh, resolveAuth } from '@ai-agg-agg/aaa-sdk'
 
 const CACHE_KEY = 'routerai/models'
 

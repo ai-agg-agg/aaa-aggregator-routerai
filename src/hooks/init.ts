@@ -1,5 +1,5 @@
 import { Hook } from '@oclif/core'
-import { registry } from 'aaa'
+import { registry } from '@ai-agg-agg/aaa-sdk'
 import { RouterAIAggregator } from '../routerai'
 
 const hook: Hook<'init'> = async function () {
